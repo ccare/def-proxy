@@ -1,0 +1,43 @@
+10
+
+dir
+0
+https://collaborate.bt.com/svn/bt-dso/ber/trunk/sdk-core/src/test/java/org
+https://collaborate.bt.com/svn/bt-dso
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ecdc356e-9e51-0410-bef0-db38c23c9c74
+
+
+
+
+
+
+
+empty
+
+nebularis
+dir
+
+
+
+add
+
