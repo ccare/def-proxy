@@ -9,9 +9,10 @@
     <packaging>jar</packaging>
     <properties>
         <filter.dir>src/main/filters</filter.dir>
+    	<jmock.version>2.5.1</jmock.version>
     </properties>
   <scm>
-    <connection>scm:svn:https://collaborate.bt.com/svn/bt-dso/ber/trunk/</connection>
+    <connection>scm:git:https://github.com/hyperthunk/def-proxy.git</connection>
   </scm>
   <version>0.1.0-SNAPSHOT</version>
     <dependencies>
@@ -58,11 +59,13 @@
         <dependency>
             <groupId>org.jmock</groupId>
             <artifactId>jmock-junit4</artifactId>
+      		<version>${jmock.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jmock</groupId>
             <artifactId>jmock-legacy</artifactId>
+      		<version>${jmock.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -88,6 +91,13 @@
             </testResource>
         </testResources>
         <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
 			<plugin>
 		        <groupId>org.apache.maven.plugins</groupId>
 		        <artifactId>maven-surefire-plugin</artifactId>
